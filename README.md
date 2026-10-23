@@ -9,6 +9,8 @@ market, and records the exact metrics behind every score. A brief is then compos
 signals. A language model is optional and, when configured, only gets to reword the prose, with its
 answer thrown away if it references a market that isn't in the signals it was given.
 
+**Live demo:** <https://ai-market-intelligence-dashboard-eta.vercel.app/dashboard>
+
 Built with Next.js 14 (App Router), React 18, TypeScript and Tailwind. No API key required.
 
 ![Dashboard signal cards and grounded brief](docs/ai-dashboard.png)
