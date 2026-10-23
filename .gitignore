@@ -22,5 +22,6 @@ dist
 .DS_Store
 Thumbs.db
 
-.vercel
+# broad env catch-all, but keep the documented example template trackable
 .env*
+!.env.example
