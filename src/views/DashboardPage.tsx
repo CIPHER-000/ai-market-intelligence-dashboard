@@ -688,12 +688,12 @@ export function DashboardPage() {
                   body: "Market ticks, order flow, and desk state in one live surface.",
                 },
                 {
-                  title: "Combine AI",
-                  body: "Use AI with live data to surface trends, risk, and opportunity signals.",
+                  title: "Derive",
+                  body: "Fixed rules turn those numbers into ranked signals. No model invents a figure.",
                 },
                 {
-                  title: "Test DX",
-                  body: "Built as a developer-experience test: wire APIs, streams, and UI end to end.",
+                  title: "Ground",
+                  body: "The AI only narrates those signals. Anything it cannot cite is rejected before you see it.",
                 },
               ].map((item) => (
                 <div key={item.title}>
@@ -721,7 +721,9 @@ export function DashboardPage() {
                   <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#3b82f6]">AI brief</p>
                   <h2 className="mt-1 font-display text-lg font-semibold text-white">Market intelligence</h2>
                   <p className="mt-1 max-w-2xl text-sm text-white/45">
-                    Combines live desk metrics with AI. Without OPENAI_API_KEY, a heuristic brief still runs for DX testing.
+                    The AI narrates the signals above and every figure it states is checked against a
+                    citation. Without OPENAI_API_KEY a deterministic brief runs instead, so the panel
+                    always has something to show.
                   </p>
                 </div>
                 {aiBrief ? (

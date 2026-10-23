@@ -9,8 +9,9 @@ export function DocsPage() {
         blockchain context, and signals that help you decide faster.
       </p>
       <p className="mb-8 border border-[rgba(56,189,248,0.25)] bg-[rgba(37,99,235,0.12)] px-4 py-3 text-sm text-sky-100/85">
-        <strong className="text-[#93c5fd]">Note:</strong> this repository is a test build for
-        developer experience. The goal is to combine AI with live market intelligence APIs, streams, and UI flows.
+        <strong className="text-[#93c5fd]">Note:</strong> market data in this build is simulated;
+        there is no live exchange connection. Signals are computed by fixed rules from those numbers,
+        and the AI brief is checked against citations before it renders.
       </p>
 
       <section className="mb-8 border border-white/[0.06] bg-[rgba(12,14,24,0.5)] p-6">
@@ -55,12 +56,20 @@ export function DocsPage() {
       </section>
 
       <section className="border border-white/[0.06] bg-[rgba(12,14,24,0.5)] p-6">
-        <h2 className="mb-4 text-xl font-semibold text-[#3b82f6]">Interview pitch</h2>
-        <p className="text-white/70 italic">
-          “Carmlize is building an AI-powered crypto market intelligence platform. Our goal is to
-          combine real-time market data, blockchain data, and AI to help users understand what is
-          happening in the market and make better decisions faster.”
-        </p>
+        <h2 className="mb-4 text-xl font-semibold text-[#3b82f6]">How grounding is enforced</h2>
+        <ul className="list-disc space-y-2 pl-6 text-white/70">
+          <li>
+            Signals are a pure function of market numbers, versioned as{" "}
+            <code className="text-white/90">signals-heuristic-v1</code>, so the same input always
+            produces the same signal set.
+          </li>
+          <li>The brief has to cite a market field for every figure it states.</li>
+          <li>
+            A response that names an unsupported pair, or cites nothing at all, is rejected in code
+            rather than shown to you.
+          </li>
+          <li>A deterministic fallback keeps the panel working when there is no API key.</li>
+        </ul>
       </section>
     </div>
   );
