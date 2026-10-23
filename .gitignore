@@ -1,0 +1,23 @@
+# dependencies
+node_modules
+
+# next.js
+.next
+out
+
+# build artifacts
+dist
+*.tsbuildinfo
+
+# env + local config (never commit real values)
+.env
+.env.local
+.env*.local
+.npmrc
+
+# platform
+.vercel
+
+# os / editor
+.DS_Store
+Thumbs.db

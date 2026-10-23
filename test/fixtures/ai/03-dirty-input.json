@@ -1,0 +1,26 @@
+{
+  "name": "03-dirty-input",
+  "description": "Malformed and unusable records mixed with one valid market. Bad records must be skipped and reported, never repaired or defaulted to zero.",
+  "summary": {
+    "active_markets": 5,
+    "volume_24h_total": 1000,
+    "open_orders_count": 0,
+    "feed_connected": false,
+    "markets": [
+      { "id": "good-usdt", "pair": "GOOD-USDT", "base": "GOOD", "quote": "USDT", "mark_price": 12.5, "change_24h_pct": 2, "volume_24h": 1000 },
+      { "id": "flat-usdt", "pair": "FLAT-USDT", "base": "FLAT", "quote": "USDT", "mark_price": 8, "change_24h_pct": 0, "volume_24h": 900 },
+      { "id": "bad-price-usdt", "pair": "BAD-PRICE-USDT", "base": "BADPRICE", "quote": "USDT", "mark_price": 0, "change_24h_pct": 1.5, "volume_24h": 800 },
+      { "id": "bad-volume-usdt", "pair": "BAD-VOLUME-USDT", "base": "BADVOLUME", "quote": "USDT", "mark_price": 4, "change_24h_pct": -1.5 },
+      { "id": "bad-change-usdt", "pair": "BAD-CHANGE-USDT", "base": "BADCHANGE", "quote": "USDT", "mark_price": 4, "change_24h_pct": "2", "volume_24h": 600 }
+    ]
+  },
+  "expect": {
+    "universe": "markets",
+    "signal_count": 1,
+    "opportunity_count": 1,
+    "risk_count": 0,
+    "min_warnings": 4,
+    "pairs_present": ["GOOD-USDT"],
+    "pairs_absent": ["FLAT-USDT", "BAD-PRICE-USDT", "BAD-VOLUME-USDT", "BAD-CHANGE-USDT"]
+  }
+}

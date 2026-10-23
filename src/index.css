@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root { color-scheme: dark; }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Manrope", system-ui, sans-serif;
+    color: rgba(255,255,255,0.92);
+    background:
+      radial-gradient(ellipse 100% 70% at 50% 0%, rgba(59,130,246,0.06), transparent 50%),
+      radial-gradient(ellipse 130% 95% at 50% 42%, #0b1217 0%, #050a0f 52%, #020508 100%);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  input, button { font-family: inherit; }
+
+  ::-webkit-scrollbar { width: 4px; height: 4px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.12); border-radius: 9px; }
+}
+
+@layer utilities {
+  .font-display { font-family: "Space Grotesk", "Manrope", system-ui, sans-serif; }
+
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .spinner {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    border: 2px solid rgba(59,130,246,0.3);
+    border-top-color: #93c5fd;
+    animation: spin 0.8s linear infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+  .animate-pulse { animation: pulse 2s cubic-bezier(0.4,0,0.6,1) infinite; }
+
+  @keyframes ticker-marquee {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+  .ticker-track { animation: ticker-marquee 36s linear infinite; }
+  .ticker-track:hover { animation-play-state: paused; }
+  @media (prefers-reduced-motion: reduce) { .ticker-track { animation: none; } }
+
+  @keyframes rotateClockwise {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  @keyframes rotateCounterClockwise {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(-360deg); }
+  }
+
+  @keyframes dashRise {
+    from { opacity: 0; transform: translateY(14px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .dash-rise {
+    animation: dashRise 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  @keyframes dashLive {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.55; transform: scale(0.85); }
+  }
+  .dash-live-dot { animation: dashLive 1.6s ease-in-out infinite; }
+
+  @keyframes dashRowIn {
+    from { opacity: 0; transform: translateX(-6px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  .dash-row { animation: dashRowIn 0.4s ease both; }
+  .dash-row:hover { background: rgba(59, 130, 246, 0.04); }
+
+  @media (prefers-reduced-motion: reduce) {
+    .dash-rise, .dash-row, .dash-live-dot { animation: none; }
+  }
+}

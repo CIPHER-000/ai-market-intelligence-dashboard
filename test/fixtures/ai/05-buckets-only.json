@@ -1,0 +1,28 @@
+{
+  "name": "05-buckets-only",
+  "description": "Caller supplies only the published top_gainers/top_losers buckets, which overlap and contain contradirectional markets. Direction must come from the metrics, not the bucket label.",
+  "summary": {
+    "active_markets": 3,
+    "volume_24h_total": 350,
+    "open_orders_count": 0,
+    "feed_connected": false,
+    "top_gainers": [
+      { "id": "loser-usdt", "pair": "LOSER-USDT", "base": "LOSER", "quote": "USDT", "mark_price": 5, "change_24h_pct": -1.9, "volume_24h": 100 },
+      { "id": "winner-usdt", "pair": "WINNER-USDT", "base": "WINNER", "quote": "USDT", "mark_price": 10, "change_24h_pct": 1.5, "volume_24h": 200 }
+    ],
+    "top_losers": [
+      { "id": "winner-usdt", "pair": "WINNER-USDT", "base": "WINNER", "quote": "USDT", "mark_price": 10, "change_24h_pct": 1.5, "volume_24h": 200 },
+      { "id": "other-usdt", "pair": "OTHER-USDT", "base": "OTHER", "quote": "USDT", "mark_price": 2, "change_24h_pct": -0.5, "volume_24h": 50 }
+    ]
+  },
+  "expect": {
+    "universe": "summary_buckets",
+    "signal_count": 3,
+    "opportunity_count": 1,
+    "risk_count": 2,
+    "min_warnings": 1,
+    "top_opportunity_pair": "WINNER-USDT",
+    "top_risk_pair": "LOSER-USDT",
+    "pairs_present": ["WINNER-USDT", "LOSER-USDT", "OTHER-USDT"]
+  }
+}

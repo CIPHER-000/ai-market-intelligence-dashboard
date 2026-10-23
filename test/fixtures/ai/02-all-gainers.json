@@ -1,0 +1,23 @@
+{
+  "name": "02-all-gainers",
+  "description": "One-sided desk: every market is up, so there must be no risk signals at all and no invented downside.",
+  "summary": {
+    "active_markets": 4,
+    "volume_24h_total": 3400000,
+    "open_orders_count": 0,
+    "feed_connected": true,
+    "markets": [
+      { "id": "btc-usdt", "pair": "BTC-USDT", "base": "BTC", "quote": "USDT", "mark_price": 66420, "change_24h_pct": 3, "volume_24h": 1000000 },
+      { "id": "eth-usdt", "pair": "ETH-USDT", "base": "ETH", "quote": "USDT", "mark_price": 3245.5, "change_24h_pct": 2, "volume_24h": 900000 },
+      { "id": "sol-usdt", "pair": "SOL-USDT", "base": "SOL", "quote": "USDT", "mark_price": 142.8, "change_24h_pct": 1, "volume_24h": 800000 },
+      { "id": "ada-usdt", "pair": "ADA-USDT", "base": "ADA", "quote": "USDT", "mark_price": 0.445, "change_24h_pct": 0.5, "volume_24h": 700000 }
+    ]
+  },
+  "expect": {
+    "universe": "markets",
+    "signal_count": 4,
+    "opportunity_count": 4,
+    "risk_count": 0,
+    "top_opportunity_pair": "BTC-USDT"
+  }
+}

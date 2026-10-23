@@ -1,0 +1,26 @@
+{
+  "name": "01-mixed-desk",
+  "description": "Balanced desk: three up, three down, with unambiguous leaders on both sides (largest move and largest volume).",
+  "summary": {
+    "active_markets": 6,
+    "volume_24h_total": 14300000,
+    "open_orders_count": 2,
+    "feed_connected": true,
+    "markets": [
+      { "id": "btc-usdt", "pair": "BTC-USDT", "base": "BTC", "quote": "USDT", "mark_price": 66420, "change_24h_pct": 5, "volume_24h": 5000000 },
+      { "id": "eth-usdt", "pair": "ETH-USDT", "base": "ETH", "quote": "USDT", "mark_price": 3245.5, "change_24h_pct": 1.2, "volume_24h": 2000000 },
+      { "id": "sol-usdt", "pair": "SOL-USDT", "base": "SOL", "quote": "USDT", "mark_price": 142.8, "change_24h_pct": 0.4, "volume_24h": 1000000 },
+      { "id": "avax-usdt", "pair": "AVAX-USDT", "base": "AVAX", "quote": "USDT", "mark_price": 34.5, "change_24h_pct": -4, "volume_24h": 4000000 },
+      { "id": "matic-usdt", "pair": "MATIC-USDT", "base": "MATIC", "quote": "USDT", "mark_price": 0.72, "change_24h_pct": -1, "volume_24h": 1500000 },
+      { "id": "link-usdt", "pair": "LINK-USDT", "base": "LINK", "quote": "USDT", "mark_price": 14.2, "change_24h_pct": -0.5, "volume_24h": 800000 }
+    ]
+  },
+  "expect": {
+    "universe": "markets",
+    "signal_count": 6,
+    "opportunity_count": 3,
+    "risk_count": 3,
+    "top_opportunity_pair": "BTC-USDT",
+    "top_risk_pair": "AVAX-USDT"
+  }
+}

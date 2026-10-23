@@ -1,0 +1,335 @@
+{
+  "name": "04-large-universe",
+  "description": "Full 35-market desk (the live shape): 18 up, 17 down, with decreasing move magnitude so the leaders are unambiguous.",
+  "summary": {
+    "active_markets": 35,
+    "volume_24h_total": 35595000,
+    "open_orders_count": 0,
+    "feed_connected": true,
+    "markets": [
+      {
+        "id": "btc-usdt",
+        "pair": "BTC-USDT",
+        "base": "BTC",
+        "quote": "USDT",
+        "mark_price": 10,
+        "change_24h_pct": 8.75,
+        "volume_24h": 1000000
+      },
+      {
+        "id": "eth-usdt",
+        "pair": "ETH-USDT",
+        "base": "ETH",
+        "quote": "USDT",
+        "mark_price": 13.5,
+        "change_24h_pct": -8.5,
+        "volume_24h": 1001000
+      },
+      {
+        "id": "bnb-usdt",
+        "pair": "BNB-USDT",
+        "base": "BNB",
+        "quote": "USDT",
+        "mark_price": 17,
+        "change_24h_pct": 8.25,
+        "volume_24h": 1002000
+      },
+      {
+        "id": "sol-usdt",
+        "pair": "SOL-USDT",
+        "base": "SOL",
+        "quote": "USDT",
+        "mark_price": 20.5,
+        "change_24h_pct": -8,
+        "volume_24h": 1003000
+      },
+      {
+        "id": "xrp-usdt",
+        "pair": "XRP-USDT",
+        "base": "XRP",
+        "quote": "USDT",
+        "mark_price": 24,
+        "change_24h_pct": 7.75,
+        "volume_24h": 1004000
+      },
+      {
+        "id": "avax-usdt",
+        "pair": "AVAX-USDT",
+        "base": "AVAX",
+        "quote": "USDT",
+        "mark_price": 27.5,
+        "change_24h_pct": -7.5,
+        "volume_24h": 1005000
+      },
+      {
+        "id": "doge-usdt",
+        "pair": "DOGE-USDT",
+        "base": "DOGE",
+        "quote": "USDT",
+        "mark_price": 31,
+        "change_24h_pct": 7.25,
+        "volume_24h": 1006000
+      },
+      {
+        "id": "ada-usdt",
+        "pair": "ADA-USDT",
+        "base": "ADA",
+        "quote": "USDT",
+        "mark_price": 34.5,
+        "change_24h_pct": -7,
+        "volume_24h": 1007000
+      },
+      {
+        "id": "link-usdt",
+        "pair": "LINK-USDT",
+        "base": "LINK",
+        "quote": "USDT",
+        "mark_price": 38,
+        "change_24h_pct": 6.75,
+        "volume_24h": 1008000
+      },
+      {
+        "id": "dot-usdt",
+        "pair": "DOT-USDT",
+        "base": "DOT",
+        "quote": "USDT",
+        "mark_price": 41.5,
+        "change_24h_pct": -6.5,
+        "volume_24h": 1009000
+      },
+      {
+        "id": "matic-usdt",
+        "pair": "MATIC-USDT",
+        "base": "MATIC",
+        "quote": "USDT",
+        "mark_price": 45,
+        "change_24h_pct": 6.25,
+        "volume_24h": 1010000
+      },
+      {
+        "id": "uni-usdt",
+        "pair": "UNI-USDT",
+        "base": "UNI",
+        "quote": "USDT",
+        "mark_price": 48.5,
+        "change_24h_pct": -6,
+        "volume_24h": 1011000
+      },
+      {
+        "id": "atom-usdt",
+        "pair": "ATOM-USDT",
+        "base": "ATOM",
+        "quote": "USDT",
+        "mark_price": 52,
+        "change_24h_pct": 5.75,
+        "volume_24h": 1012000
+      },
+      {
+        "id": "near-usdt",
+        "pair": "NEAR-USDT",
+        "base": "NEAR",
+        "quote": "USDT",
+        "mark_price": 55.5,
+        "change_24h_pct": -5.5,
+        "volume_24h": 1013000
+      },
+      {
+        "id": "arb-usdt",
+        "pair": "ARB-USDT",
+        "base": "ARB",
+        "quote": "USDT",
+        "mark_price": 59,
+        "change_24h_pct": 5.25,
+        "volume_24h": 1014000
+      },
+      {
+        "id": "op-usdt",
+        "pair": "OP-USDT",
+        "base": "OP",
+        "quote": "USDT",
+        "mark_price": 62.5,
+        "change_24h_pct": -5,
+        "volume_24h": 1015000
+      },
+      {
+        "id": "apt-usdt",
+        "pair": "APT-USDT",
+        "base": "APT",
+        "quote": "USDT",
+        "mark_price": 66,
+        "change_24h_pct": 4.75,
+        "volume_24h": 1016000
+      },
+      {
+        "id": "ltc-usdt",
+        "pair": "LTC-USDT",
+        "base": "LTC",
+        "quote": "USDT",
+        "mark_price": 69.5,
+        "change_24h_pct": -4.5,
+        "volume_24h": 1017000
+      },
+      {
+        "id": "inj-usdt",
+        "pair": "INJ-USDT",
+        "base": "INJ",
+        "quote": "USDT",
+        "mark_price": 73,
+        "change_24h_pct": 4.25,
+        "volume_24h": 1018000
+      },
+      {
+        "id": "sui-usdt",
+        "pair": "SUI-USDT",
+        "base": "SUI",
+        "quote": "USDT",
+        "mark_price": 76.5,
+        "change_24h_pct": -4,
+        "volume_24h": 1019000
+      },
+      {
+        "id": "tia-usdt",
+        "pair": "TIA-USDT",
+        "base": "TIA",
+        "quote": "USDT",
+        "mark_price": 80,
+        "change_24h_pct": 3.75,
+        "volume_24h": 1020000
+      },
+      {
+        "id": "sei-usdt",
+        "pair": "SEI-USDT",
+        "base": "SEI",
+        "quote": "USDT",
+        "mark_price": 83.5,
+        "change_24h_pct": -3.5,
+        "volume_24h": 1021000
+      },
+      {
+        "id": "wld-usdt",
+        "pair": "WLD-USDT",
+        "base": "WLD",
+        "quote": "USDT",
+        "mark_price": 87,
+        "change_24h_pct": 3.25,
+        "volume_24h": 1022000
+      },
+      {
+        "id": "jup-usdt",
+        "pair": "JUP-USDT",
+        "base": "JUP",
+        "quote": "USDT",
+        "mark_price": 90.5,
+        "change_24h_pct": -3,
+        "volume_24h": 1023000
+      },
+      {
+        "id": "pepe-usdt",
+        "pair": "PEPE-USDT",
+        "base": "PEPE",
+        "quote": "USDT",
+        "mark_price": 0.0000098,
+        "change_24h_pct": 2.75,
+        "volume_24h": 1024000
+      },
+      {
+        "id": "shib-usdt",
+        "pair": "SHIB-USDT",
+        "base": "SHIB",
+        "quote": "USDT",
+        "mark_price": 97.5,
+        "change_24h_pct": -2.5,
+        "volume_24h": 1025000
+      },
+      {
+        "id": "floki-usdt",
+        "pair": "FLOKI-USDT",
+        "base": "FLOKI",
+        "quote": "USDT",
+        "mark_price": 101,
+        "change_24h_pct": 2.25,
+        "volume_24h": 1026000
+      },
+      {
+        "id": "fet-usdt",
+        "pair": "FET-USDT",
+        "base": "FET",
+        "quote": "USDT",
+        "mark_price": 104.5,
+        "change_24h_pct": -2,
+        "volume_24h": 1027000
+      },
+      {
+        "id": "render-usdt",
+        "pair": "RENDER-USDT",
+        "base": "RENDER",
+        "quote": "USDT",
+        "mark_price": 108,
+        "change_24h_pct": 1.75,
+        "volume_24h": 1028000
+      },
+      {
+        "id": "grt-usdt",
+        "pair": "GRT-USDT",
+        "base": "GRT",
+        "quote": "USDT",
+        "mark_price": 111.5,
+        "change_24h_pct": -1.5,
+        "volume_24h": 1029000
+      },
+      {
+        "id": "ldo-usdt",
+        "pair": "LDO-USDT",
+        "base": "LDO",
+        "quote": "USDT",
+        "mark_price": 115,
+        "change_24h_pct": 1.25,
+        "volume_24h": 1030000
+      },
+      {
+        "id": "crv-usdt",
+        "pair": "CRV-USDT",
+        "base": "CRV",
+        "quote": "USDT",
+        "mark_price": 118.5,
+        "change_24h_pct": -1,
+        "volume_24h": 1031000
+      },
+      {
+        "id": "aave-usdt",
+        "pair": "AAVE-USDT",
+        "base": "AAVE",
+        "quote": "USDT",
+        "mark_price": 122,
+        "change_24h_pct": 0.75,
+        "volume_24h": 1032000
+      },
+      {
+        "id": "mkr-usdt",
+        "pair": "MKR-USDT",
+        "base": "MKR",
+        "quote": "USDT",
+        "mark_price": 125.5,
+        "change_24h_pct": -0.5,
+        "volume_24h": 1033000
+      },
+      {
+        "id": "snx-usdt",
+        "pair": "SNX-USDT",
+        "base": "SNX",
+        "quote": "USDT",
+        "mark_price": 129,
+        "change_24h_pct": 0.25,
+        "volume_24h": 1034000
+      }
+    ]
+  },
+  "expect": {
+    "universe": "markets",
+    "signal_count": 35,
+    "opportunity_count": 18,
+    "risk_count": 17,
+    "top_opportunity_pair": "BTC-USDT",
+    "top_risk_pair": "ETH-USDT"
+  }
+}
