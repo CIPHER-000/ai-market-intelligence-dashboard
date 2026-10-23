@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import "../src/index.css";
 
 export const metadata: Metadata = {
-  title: "Carmlize",
-  description: "AI-powered crypto market intelligence — real-time data, signals, and insights",
+  title: "AI Market Intelligence Dashboard",
+  description:
+    "Deterministic crypto market signals and an evidence-backed AI desk brief, on a Next.js trading dashboard.",
 };
 
 export default function RootLayout({

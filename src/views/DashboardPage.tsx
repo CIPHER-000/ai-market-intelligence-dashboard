@@ -600,15 +600,15 @@ export function DashboardPage() {
         <header className="dash-rise mb-10 flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-2xl">
             <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-[#3b82f6]">
-              Carmlize · AI market intelligence · Test build
+              Market intelligence · deterministic signals · grounded brief
             </p>
             <h1 className="mt-3 font-display text-4xl font-semibold tracking-tight text-white sm:text-5xl">
               Understand the market faster
             </h1>
             <p className="mt-3 max-w-xl text-base leading-relaxed text-white/45">
-              This project is a test environment for developer experience. It combines AI with
-              real-time market intelligence so engineers can build, wire, and evaluate how
-              signals, desk metrics, and trade flows work together.
+              Every signal here is computed from market numbers by fixed rules, never written by a
+              model. The AI layer only narrates those signals, and every figure it states has to
+              trace back to a citation or the brief is rejected before it reaches you.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Link

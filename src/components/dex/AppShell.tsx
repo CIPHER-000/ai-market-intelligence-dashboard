@@ -34,9 +34,10 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         className="border-b border-[rgba(56,189,248,0.25)] px-4 py-2 text-center text-xs leading-relaxed text-sky-100/80"
         style={{ background: "rgba(37,99,235,0.18)" }}
       >
-        <strong className="font-semibold text-[#93c5fd]">Test project</strong>
+        <strong className="font-semibold text-[#93c5fd]">Portfolio project</strong>
         {" — "}
-        built to evaluate developer experience and to combine AI with real-time crypto market intelligence.
+        deterministic market signals and an evidence-backed AI brief, computed over simulated market data.
+        Not investment advice.
       </div>
       <header
         className="sticky top-0 z-50 flex items-center justify-between border-b border-white/[0.06] bg-[rgba(11,18,23,0.88)] px-8 backdrop-blur-[10px]"
