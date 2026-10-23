@@ -2,6 +2,10 @@ import { NextResponse } from "next/server";
 import { getMarketEngine, getMatchingEngine } from "../../../../../lib/engines.js";
 import { buildDashboardSummary } from "../../../../../lib/dashboardSummary.js";
 
+// Live desk metrics. Without this Next prerenders the handler at build time and
+// serves those frozen numbers forever.
+export const dynamic = "force-dynamic";
+
 export async function GET() {
   try {
     const summary = await buildDashboardSummary(getMarketEngine(), getMatchingEngine());
